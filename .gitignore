@@ -1,0 +1,13 @@
+*.pdb
+*.class
+*.zip
+*.tar
+*.rar
+*.log
+*.data
+.project
+.classpath
+.settings
+bin
+build
+target
