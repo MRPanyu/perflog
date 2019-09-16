@@ -21,8 +21,7 @@ public class PerfLog {
 	 * <p>
 	 * 注意当前线程中同时只能开启一次性能日志，线程中已经开启性能日志的情况下再开启一个名称不同的日志，后一个不会记录。
 	 * 
-	 * @param logName 日志名称，相当于
-	 *                {@link org.apache.commons.logging.LogFactory#getLog(String)}中的参数，结合日志组件的配置可以用于控制输出方式。
+	 * @param logName 日志名称。
 	 */
 	public static void startLog(String logName) {
 		if (tlLogName.get() != null) {
