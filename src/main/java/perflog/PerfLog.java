@@ -85,7 +85,7 @@ public class PerfLog {
 		PerfStep currentStep = tlCurrentStep.get();
 		if (currentStep == null) {
 			throw new RuntimeException("Calling endStep without startStep, stepName=" + stepName);
-		} else if (stepName != currentStep.getStepName()) {
+		} else if (!stepName.equals(currentStep.getStepName())) {
 			throw new RuntimeException("Step name not equal to current step, maybe last step is unended? stepName="
 					+ stepName + ", currentStepName=" + currentStep.getStepName());
 		}
